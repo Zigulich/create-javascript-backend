@@ -38,7 +38,7 @@ Estrutura de código padrão para iniciar projetos de API REST com Javascript no
 
 -   typescript
 
-> Use o comando **yarn upgrade** para atualizar as dependências para última versão instável
+> Use o comando **yarn upgrade** para atualizar as dependências para última versão estável
 
 ## 📄 Estrutura de pastas
 A estrutura de pastas padrão do projeto, utilizando como inspiração a arquitetura MVC
@@ -83,13 +83,13 @@ Após a instalação dos pacotes, faça a configuração do projeto no arquivo d
 
     CONNECTION_CLIENT =  'mysql2' # Knex Client (ver documentação)
     CONNECTION_HOST = 'localhost' # Host do banco (deixe em branco caso necessário)
-    CONNECTION_USER = 'root'         # Nome de usuário (deixe em branco caso necessário)
-    CONNECTION_PASS = ''                # Senha de acesso (deixe em branco caso necessário)
-    CONNECTION_DB = 'finan'           # Nome do banco de dados (MySQL) ou localização do arquivo (SQLite)
+    CONNECTION_USER = 'root'      # Nome de usuário (deixe em branco caso necessário)
+    CONNECTION_PASS = ''          # Senha de acesso (deixe em branco caso necessário)
+    CONNECTION_DB = 'finan'       # Nome do banco de dados (MySQL) ou localização do arquivo (SQLite)
 
-    JWT_SECRET = ''                            # Secret de autenticação do JWT
+    JWT_SECRET = ''               # Secret de autenticação do JWT
 
-    SERVER_PORT =  3000                  # Porta em que o servidor será aberto
+    SERVER_PORT =  3000           # Porta em que o servidor será aberto
 
 > Conexão com banco de dados Oracle, PostgreSQL e Microsoft SQL Server
 > não foram testadas.
