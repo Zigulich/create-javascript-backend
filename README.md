@@ -2,7 +2,7 @@
 
 Estrutura de código padrão para iniciar projetos de API REST com Javascript no backend.
 
-> A estrutura do projeto, funcionalidades e padrões de código é baseada nos padrões da [Rocketseat](https://blog.rocketseat.com.br/ "Rocketseat").
+> A estrutura do projeto, funcionalidades e padrões de código é baseada nos padrões da [Rocketseat](https://blog.rocketseat.com.br/ 'Rocketseat').
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/zigulich/create-javascript-backend/README-template?style=for-the-badge)
 
@@ -41,6 +41,7 @@ Estrutura de código padrão para iniciar projetos de API REST com Javascript no
 > Use o comando **yarn upgrade** para atualizar as dependências para última versão estável
 
 ## 📄 Estrutura de pastas
+
 A estrutura de pastas padrão do projeto, utilizando como inspiração a arquitetura MVC
 
     ├───bin (Binários da aplicação, não incluidos no build)
@@ -55,7 +56,6 @@ A estrutura de pastas padrão do projeto, utilizando como inspiração a arquite
         ├───functions (Funções úteis para aplicação)
         ├───model (Modelos do Typescript)
         └───view (Rotas do express)
-
 
 ## 🚀 Instalando create-javascript-backend
 
@@ -100,6 +100,8 @@ Para usar **create-javascript-backend**, siga estas etapas:
 
 **Criação de rotas:**
 
+**Atenção!** os comentários _{ROUTE_IMPORT}_ e _{ROUTE_CONFIG}_ **não** podem ser removidos do arquivo _sources/index.ts_, pois os mesmos são responsáveis por adicionar o arquivo de rotas automaticamente na aplicação. (Entenda melhor no arquivo _bin/create-mvc/index.js:29_)
+
 ```
 yarn create-mvc Usuarios
 ```
@@ -141,7 +143,6 @@ Para contribuir com **create-javascript-backend**, siga estas etapas:
 5. Crie a solicitação de pull.
 
 Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
 
 ## 📝 Licença
 
