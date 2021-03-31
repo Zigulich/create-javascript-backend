@@ -8,6 +8,10 @@ const ControllerDir = path.join(__dirname, './../../sources/controller/')
 const ViewDir = path.join(__dirname, './../../sources/view/')
 const AppFile = path.join(__dirname, './../../sources/index.ts')
 
+!fs.existsSync(ModelDir) && fs.mkdirSync(ModelDir)
+!fs.existsSync(ControllerDir) && fs.mkdirSync(ControllerDir)
+!fs.existsSync(ViewDir) && fs.mkdirSync(ViewDir)
+
 const ModelText = require('./model')(nomeModelo)
 const ControllerText = require('./controller')(nomeModelo)
 const ViewText = require('./view')(nomeModelo)
