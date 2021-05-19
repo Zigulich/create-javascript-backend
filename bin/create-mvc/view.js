@@ -1,6 +1,6 @@
-module.exports = function view(Nome){
+module.exports = function view(Nome) {
 	return `import { Router } from 'express'
-import Controller from './../controller/${Nome}Controller'
+import Controller from '@controller/${Nome}Controller'
 
 const Route = Router();
 
