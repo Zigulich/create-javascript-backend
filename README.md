@@ -128,6 +128,15 @@ yarn create-seed usuarios
 > Será criando o arquivo **00_usuarios** dentro da pasta
 > _/sources/connection/seeds_, com código exemplo para criação de dados na tabela _usuários_.
 
+**Adicionando o Electron na aplicação:**
+
+```
+yarn add-electron
+```
+
+> Adiciona o pacote ElectronJS junto ao Electron Builder, além de fazer as configurações básicas.
+> Será criado o arquivo _index.js_ na pasta raiz do projeto, com as configurações do Electron, além de adicionar os scripts _electron_ e _electron:build_ para inicialização e build, respectivamente.
+
 ## 📫 Contribuindo
 
 Para contribuir com **create-javascript-backend**, siga estas etapas:
