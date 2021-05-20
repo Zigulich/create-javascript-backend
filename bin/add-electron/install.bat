@@ -1,0 +1,1 @@
+node update.js  && xcopy .\\index.js .\\..\\..\\ && npm install electron --save-dev electron-builder --save-dev && del .\\..\\..\\package-lock.json
