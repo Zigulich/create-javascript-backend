@@ -8,7 +8,7 @@ export async function up(knex: Knex){
 
 		
 		// Table comment
-		table.comment("tabela teste")
+		// table.comment("")
 	})
 }
 
