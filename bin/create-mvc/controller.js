@@ -2,8 +2,6 @@ module.exports = function controller(Nome) {
 	return `import { Request, Response } from 'express'
 import Connection from '@connection/connection'
 import Model from '@model/${Nome}Model'
-import RequestParams from '@functions/RequestParams'
-import DefaultResponse from '@functions/DefaultResponse'
 
 class Controller {
 	async index( req: Request, res: Response ){}

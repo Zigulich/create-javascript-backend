@@ -1,6 +1,6 @@
 {
 	"name": "create-javascript-backend",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "Criar base do backend de projetos",
 	"main": "index.js",
 	"author": "Luan Zigulich",

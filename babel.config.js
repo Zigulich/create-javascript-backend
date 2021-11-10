@@ -17,7 +17,6 @@ module.exports = {
 				alias: {
 					'@connection': './sources/connection',
 					'@controller': './sources/controller',
-					'@functions': './sources/functions',
 					'@model': './sources/model',
 					'@view': './sources/view',
 					'@config': './sources/config',
