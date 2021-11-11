@@ -4,11 +4,11 @@ module.exports = function Migration(Nome) {
 export async function up(knex: Knex){
 	return knex.schema.createTable('${Nome}', table => {
 		table.increments('id').primary().comment("Chave primária");
-		table.timestamps(true, true);
+		table.timestamp('created_at').nullable().defaultTo(knex.fn.now()).comment('Data de criação do registro')
 
 		
-		// Table comment
-		// table.comment("")
+		// Comentário da tabela
+		table.comment("")
 	})
 }
 
