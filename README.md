@@ -2,9 +2,7 @@
 
 Estrutura de código padrão para iniciar projetos de API REST com Javascript no backend.
 
-> A estrutura do projeto, funcionalidades e padrões de código é baseada nos padrões da [Rocketseat](https://blog.rocketseat.com.br/ 'Rocketseat').
-
-![GitHub repo size](https://img.shields.io/github/repo-size/zigulich/create-javascript-backend/README-template?style=for-the-badge)
+[![GitHub license](https://img.shields.io/github/license/Zigulich/create-javascript-backend)](https://github.com/Zigulich/create-javascript-backend/blob/master/LICENSE.md)
 
 ## 💻 Dependências
 
@@ -26,15 +24,29 @@ Estrutura de código padrão para iniciar projetos de API REST com Javascript no
 
 ##### Dependências de desenvolvedor
 
+-   @babel/cli
+
+-   @babel/core
+
+-   @babel/node
+
+-   @babel/preset-env
+
+-   @babel/preset-typescript
+
 -   @types/cors
 
 -   @types/express
 
 -   @types/jsonwebtoken
 
+-   babel-plugin-module-resolver
+
 -   ts-node
 
 -   ts-node-dev
+
+-   tsconfig-paths
 
 -   typescript
 
@@ -45,6 +57,7 @@ Estrutura de código padrão para iniciar projetos de API REST com Javascript no
 A estrutura de pastas padrão do projeto, utilizando como inspiração a arquitetura MVC
 
     ├───bin (Binários da aplicação, não incluidos no build)
+    │   ├───add-eletron
     │   ├───create-migration
     │   ├───create-mvc
     │   └───create-seed
@@ -85,11 +98,11 @@ Após a instalação dos pacotes, faça a configuração do projeto no arquivo d
     CONNECTION_HOST = 'localhost' # Host do banco (deixe em branco caso necessário)
     CONNECTION_USER = 'root'      # Nome de usuário (deixe em branco caso necessário)
     CONNECTION_PASS = ''          # Senha de acesso (deixe em branco caso necessário)
-    CONNECTION_DB = 'finan'       # Nome do banco de dados (MySQL) ou localização do arquivo (SQLite)
+    CONNECTION_DB = 'finan'       # Nome do banco de dados (MySQL)
 
     JWT_SECRET = ''               # Secret de autenticação do JWT
 
-    SERVER_PORT =  3000           # Porta em que o servidor será aberto
+    PORT =  3000                  # Porta em que o servidor será aberto
 
 > Conexão com banco de dados Oracle, PostgreSQL e Microsoft SQL Server
 > não foram testadas.
