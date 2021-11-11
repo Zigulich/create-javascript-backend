@@ -8,7 +8,7 @@ const server = require('./build/index')
 let win
 
 function createMainWindow() {
-	const PORTA = process.env.SERVER_PORT
+	const PORTA = process.env.PORT
 
 	server.default.listen(PORTA, () => {
 		console.log('Servidor aberto na porta ' + PORTA)
