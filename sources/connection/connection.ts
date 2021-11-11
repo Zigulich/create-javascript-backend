@@ -9,6 +9,5 @@ export default knex({
 		user: CONNECTION_USER,
 		password: CONNECTION_PASS,
 		database: CONNECTION_DB,
-		filename: CONNECTION_CLIENT === 'sqlite3' ? CONNECTION_DB : '',
 	},
 })
