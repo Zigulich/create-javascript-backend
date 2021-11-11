@@ -39,14 +39,5 @@
 		"create-migration": "node ./bin/create-migration/index.js",
 		"create-seed": "node ./bin/create-seed/index.js",
 		"add-electron": "cd bin/add-electron && install"
-	},
-	"prettier": {
-		"printWidth": 150,
-		"tabWidth": 4,
-		"singleQuote": true,
-		"jsxBracketSameLine": true,
-		"arrowParens": "avoid",
-		"semi": false,
-		"bracketSpacing": true
 	}
 }
