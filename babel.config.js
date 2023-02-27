@@ -15,11 +15,11 @@ module.exports = {
 			'module-resolver',
 			{
 				alias: {
-					'@connection': './sources/connection',
-					'@controller': './sources/controller',
-					'@model': './sources/model',
-					'@view': './sources/view',
 					'@config': './sources/config',
+					'@controllers': './sources/controllers',
+					'@models': './sources/models',
+					'@views': './sources/views',
+					'@services': './sources/services',
 				},
 			},
 		],
