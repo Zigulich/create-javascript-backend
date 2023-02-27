@@ -1,8 +1,7 @@
 {
 	"name": "create-javascript-backend",
-	"version": "2.1.0",
-	"description": "Criar base do backend de projetos",
-	"main": "index.js",
+	"version": "3.0.0",
+	"description": "Base para backend em Typescript",
 	"author": "Luan Zigulich",
 	"license": "MIT",
 	"private": true,
