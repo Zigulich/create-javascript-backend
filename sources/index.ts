@@ -2,21 +2,16 @@ import express, { Request, Response, NextFunction } from 'express'
 import cors from 'cors'
 import jwt from 'jsonwebtoken'
 
-/*{ROUTE_IMPORT}*/
-
 class App {
 	server: express.Application
 
 	constructor() {
 		this.server = express()
-
 		this.middlewares()
 		this.routes()
 	}
 
-	routes() {
-		/*{ROUTE_CONFIG}*/
-	}
+	routes() {}
 
 	middlewares() {
 		this.server.use(cors())
@@ -30,6 +25,10 @@ class App {
 
 		jwt.verify(requestToken, appSecret, function (err, decoded) {
 			if (err) return res.status(401).send('Usuário não autorizado')
+			// Definir aqui o ID do usuário conforme o token for configurado
+			res.tokenData = {
+				id: null,
+			}
 			next()
 		})
 	}
