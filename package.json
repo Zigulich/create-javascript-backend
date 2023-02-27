@@ -30,10 +30,6 @@
 	},
 	"scripts": {
 		"start": "ts-node-dev -r tsconfig-paths/register sources/server.ts",
-		"build": "babel sources --extensions \".js,.ts\" --out-dir build --copy-files --no-copy-ignored && xcopy .\\.env .\\build\\",
-		"create-mvc": "node ./bin/create-mvc/index.js",
-		"create-migration": "node ./bin/create-migration/index.js",
-		"create-seed": "node ./bin/create-seed/index.js",
-		"add-electron": "cd bin/add-electron && install"
+		"build": "babel sources --extensions \".js,.ts\" --out-dir build --copy-files --no-copy-ignored && xcopy .\\.env .\\build\\"
 	}
 }
