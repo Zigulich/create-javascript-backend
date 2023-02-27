@@ -1,6 +1,8 @@
 # create-javascript-backend
 
-Estrutura de código padrão para iniciar projetos de API REST com Javascript no backend.
+Estrutura de código padrão para iniciar projetos de API REST com Typescript.
+
+`Desde as últimas atualizações, tem-se como objetivo tornar-se simples e flexível, agilizando o tempo de criação da base do projeto.`
 
 [![GitHub license](https://img.shields.io/github/license/Zigulich/create-javascript-backend)](https://github.com/Zigulich/create-javascript-backend/blob/master/LICENSE.md)
 
@@ -9,66 +11,24 @@ Estrutura de código padrão para iniciar projetos de API REST com Javascript no
 ##### O projeto possui as seguintes dependências:
 
 -   cors
-
 -   date-fns
-
 -   dotenv
-
 -   express
-
 -   jsonwebtoken
-
--   knex
-
--   mysql2 _( Por padrão dos projetos)_
-
-##### Dependências de desenvolvedor
-
--   @babel/cli
-
--   @babel/core
-
--   @babel/node
-
--   @babel/preset-env
-
--   @babel/preset-typescript
-
--   @types/cors
-
--   @types/express
-
--   @types/jsonwebtoken
-
--   babel-plugin-module-resolver
-
--   ts-node
-
--   ts-node-dev
-
--   tsconfig-paths
-
--   typescript
 
 > Use o comando **yarn upgrade** para atualizar as dependências para última versão estável
 
 ## 📄 Estrutura de pastas
 
-A estrutura de pastas padrão do projeto, utilizando como inspiração a arquitetura MVC
+A estrutura de pastas padrão do projeto, utilizando como inspiração a arquitetura MVC. Todas estas as pastas podem ser acessadas usando um `@` no início, usando `Typescript Paths`.
 
-    ├───bin (Binários da aplicação, não incluidos no build)
-    │   ├───add-eletron
-    │   ├───create-migration
-    │   ├───create-mvc
-    │   └───create-seed
-    └───sources (Arquivos da aplicação)
-        ├───connection (Informações da conexão)
-        │   ├───migrations
-        │   └───seeds
-        ├───controller (Controladores)
-        ├───functions (Funções úteis para aplicação)
-        ├───model (Modelos do Typescript)
-        └───view (Rotas do express)
+    ├───sources (Arquivos da aplicação)
+        ├───controllers
+        ├───functions
+        ├───models
+    	├───services
+    	├───config
+        └───views
 
 ## 🚀 Instalando create-javascript-backend
 
@@ -93,62 +53,8 @@ Após a instalação dos pacotes, faça a configuração do projeto no arquivo d
 **Configurações do DotEnv:**
 
     /*.env*/
-
-    CONNECTION_CLIENT =  'mysql2' # Knex Client (ver documentação)
-    CONNECTION_HOST = 'localhost' # Host do banco (deixe em branco caso necessário)
-    CONNECTION_USER = 'root'      # Nome de usuário (deixe em branco caso necessário)
-    CONNECTION_PASS = ''          # Senha de acesso (deixe em branco caso necessário)
-    CONNECTION_DB = 'finan'       # Nome do banco de dados (MySQL)
-
     JWT_SECRET = ''               # Secret de autenticação do JWT
-
     PORT =  3000                  # Porta em que o servidor será aberto
-
-> Conexão com banco de dados Oracle, PostgreSQL e Microsoft SQL Server
-> não foram testadas.
-
-## ☕ Funções
-
-Para usar **create-javascript-backend**, siga estas etapas:
-
-**Criação de rotas:**
-
-**Atenção!** os comentários _{ROUTE_IMPORT}_ e _{ROUTE_CONFIG}_ **não** podem ser removidos do arquivo _sources/index.ts_, pois os mesmos são responsáveis por adicionar o arquivo de rotas automaticamente na aplicação. (Entenda melhor no arquivo _bin/create-mvc/index.js:29_)
-
-```
-yarn create-mvc Usuarios
-```
-
-> A função irá criar os arquivos _UsuariosController_, _UsuariosModel_ e
-> _UsuariosRoute_, dentro de suas respectivas pastas, além de criar a rota
-> _'/usuarios'_ dentro do _index.ts_
-
-**Criando modelo de Migration:**
-
-```
-yarn create-migration usuarios
-```
-
-> Será criando o arquivo **00_create_usuarios** dentro da pasta
-> _/sources/connection/migrations_, com código exemplo para criação da tabela _usuários_.
-
-**Criando modelo de Seed:**
-
-```
-yarn create-seed usuarios
-```
-
-> Será criando o arquivo **00_usuarios** dentro da pasta
-> _/sources/connection/seeds_, com código exemplo para criação de dados na tabela _usuários_.
-
-**Adicionando o Electron na aplicação:**
-
-```
-yarn add-electron
-```
-
-> Adiciona o pacote ElectronJS junto ao Electron Builder, além de fazer as configurações básicas.
-> Será criado o arquivo _index.js_ na pasta raiz do projeto, com as configurações do Electron, além de adicionar os scripts _electron_ e _electron:build_ para inicialização e build, respectivamente.
 
 ## 📫 Contribuindo
 
