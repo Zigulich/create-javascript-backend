@@ -11,9 +11,7 @@
 		"date-fns": "^2.29.3",
 		"dotenv": "^16.0.3",
 		"express": "^4.18.2",
-		"jsonwebtoken": "^9.0.0",
-		"knex": "^0.95.14",
-		"mysql2": "^2.2.5"
+		"jsonwebtoken": "^9.0.0"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.21.0",
@@ -32,8 +30,6 @@
 	},
 	"scripts": {
 		"start": "ts-node-dev -r tsconfig-paths/register sources/server.ts",
-		"knex:migrations": "knex migrate:latest --knexfile ./sources/connection/knexconfig.ts migrate:latest",
-		"knex:seeds": "knex seed:run --knexfile ./sources/connection/knexconfig.ts",
 		"build": "babel sources --extensions \".js,.ts\" --out-dir build --copy-files --no-copy-ignored && xcopy .\\.env .\\build\\",
 		"create-mvc": "node ./bin/create-mvc/index.js",
 		"create-migration": "node ./bin/create-migration/index.js",
